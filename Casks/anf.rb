@@ -1,6 +1,6 @@
 cask "anf" do
-  version "0.8.0"
-  sha256 "730df5caf47ebc2d0cabb8ce5fd01ef07cd73b58eef946430a92568e7146249a"
+  version "0.9.0"
+  sha256 "0cc00ed45e24b1035478c51f799cbcb23aca37f90762f9e88ca43cd63949c73f"
 
   url "https://github.com/rescenedev/anf/releases/download/v#{version}/anf.zip"
   name "anf"
