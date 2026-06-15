@@ -18,7 +18,7 @@ cask "anf" do
   EOS
 
   zap trash: [
-    "~/Library/Caches/anf",
     "~/.anf",
+    "~/Library/Caches/anf",
   ]
 end
