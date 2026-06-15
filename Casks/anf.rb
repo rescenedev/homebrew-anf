@@ -1,8 +1,8 @@
 cask "anf" do
-  version "1.5.10"
-  sha256 "87817fc45f4658804033f4c5773e59d3b3b5c86321e18535857aba903d06db78"
+  version "1.5.11"
+  sha256 "e458df005972c26fc933459c09842b6e825db00add00aeb4181135751696985b"
 
-  url "https://github.com/rescenedev/anf/releases/download/v#{version}/anf.zip"
+  url "https://github.com/rescenedev/anf/releases/download/v#{version}/anf.dmg"
   name "anf"
   desc "Fast native macOS file browser — all new finder"
   homepage "https://github.com/rescenedev/anf"
