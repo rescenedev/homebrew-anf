@@ -9,19 +9,10 @@ cask "anf" do
 
   app "anf.app"
 
-  # Self-signed (not notarized): strip the quarantine flag so Gatekeeper doesn't
-  # block the first launch.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/anf.app"]
-  end
+  # anf is signed with a Developer ID and notarized by Apple — Gatekeeper opens
+  # it cleanly, so no quarantine workaround is needed.
 
   caveats <<~EOS
-    anf is a self-signed build (not notarized). The cask strips the quarantine
-    flag automatically, but if macOS still blocks it on first launch:
-      • Right-click anf.app → Open, then confirm, or
-      • Run: xattr -dr com.apple.quarantine /Applications/anf.app
-
     Optional tools for richer search:
       brew install fd ripgrep
   EOS
